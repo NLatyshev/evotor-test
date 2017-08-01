@@ -16,4 +16,4 @@ Run using command line like (H2 file DB) from target directory
 java -jar evotor-test-1.0-SNAPSHOT.jar ../src/main/resources/application.properties
 ```
 
-Or configure application.properties choosing appropriate jdbc settings and don't forget to add jdbc driver to classpath
+Or configure application.properties choosing appropriate jdbc settings and don't forget to add jdbc driver to classpath and apply schema script like [h2-schema](https://github.com/NLatyshev/evotor-test/blob/master/src/main/resources/h2-schema.sql). Implement [SqlDialect](https://github.com/NLatyshev/evotor-test/blob/master/src/main/java/com/github/nlatyshev/evotor/dao/SqlDialect.java) and register in [Application](https://github.com/NLatyshev/evotor-test/blob/master/src/main/java/com/github/nlatyshev/evotor/Application.java)
